@@ -1,5 +1,9 @@
 name: Google Api
-on: [push]
+on: 
+  push:
+
+  schedule:
+    - cron:  '52 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
